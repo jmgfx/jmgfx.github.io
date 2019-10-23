@@ -24,6 +24,7 @@ div.abcenter {
 
 .uplinks {
     position: absolute;
+    top: 5px;
     left: 50%;
 }
 
@@ -106,33 +107,6 @@ span.name {
     font-weight: 500;
 }
 
-div.sliderstyle {
-    font-weight: 300;
-}
-
-div.sliderstyle a {
-    color: rgb(100, 100, 100);
-    font-weight: 400;
-    transition: .3s;
-}
-
-    div.sliderstyle a:hover {
-        color: rgb(160, 160, 160);
-    }
-
-span.darkmode {
-    background-color: rgb(44, 44, 44);
-    padding: 0px 3px 0px 3px;
-    color: white;
-}
-
-span.ravenclaw {
-    font-weight: 800;
-    background: linear-gradient(to right, rgb(23, 13, 167), rgb(64, 134, 226));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
 .bottom {
     height: 100%; width: 100%;
     display: flex;
@@ -153,32 +127,4 @@ div.left {
 div.right {
     width: 50%; height: 100%;
     background-color: rgb(20, 20, 20);
-}
-
-@media only screen and (max-width: 600px) {
-    .header-content > div.greeting {
-        font-size: 2.5em;
-    }
-    .header-content > div.subgreeting {
-        font-size: 1em !important;
-    }
-    .bottom { 
-        display: block;
-        height: inherit; width: inherit;
-    }
-    
-    .midlinks {
-        display: block;
-        position: absolute;
-        margin: 0;
-        bottom: 3px; right: 0;
-    }
-    
-    div.left {
-        position: relative;
-        width: 100%; height: 100%;
-    }
-    div.right {
-        width: 100%; height: 100%;
-    }
 }

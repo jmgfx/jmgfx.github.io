@@ -1,0 +1,26 @@
+div.sliderstyle {
+    font-weight: 300;
+}
+
+div.sliderstyle a {
+    color: rgb(100, 100, 100);
+    font-weight: 400;
+    transition: .3s;
+}
+
+    div.sliderstyle a:hover {
+        color: rgb(160, 160, 160);
+    }
+
+span.darkmode {
+    background-color: rgb(44, 44, 44);
+    padding: 0px 3px 0px 3px;
+    color: white;
+}
+
+span.ravenclaw {
+    font-weight: 800;
+    background: linear-gradient(to right, rgb(23, 13, 167), rgb(64, 134, 226));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
