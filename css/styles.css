@@ -1,14 +1,88 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,800&display=swap');
 
+* { box-sizing: border-box; }
+
 body { 
     margin: 0; padding: 0;
+    background-color: black;
     font-family: 'Montserrat', sans-serif;
 }
 
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+div.abcenter {
+    position: relative;
+    left: -50%;
+}
+
+.uplinks {
+    position: absolute;
+    left: 50%;
+}
+
+.midlinks {
+    display: none;
+}
+
+.downlinks {
+    position: absolute;
+    right: 0; bottom: 5px;
+}
+
+.uplinks a {
+    background-color: black;
+    color: white;
+    font-size: 2em;
+    padding: 10px;
+    border-bottom: solid 1px black;
+    margin: 0px 3px 0px 3px;
+    transition: 0.3s;
+}
+
+    .uplinks a:hover {
+        background-color: transparent;
+        color: black;
+        border-bottom: solid 5px black;
+    }
+
+.midlinks a {
+    background-color: transparent;
+    padding: 10px;
+    color: white !important;
+    font-size: 3em;
+    transition: 0.3s;
+}
+
+    .midlinks a:hover {
+        color: black !important;
+        background-color: white;
+    }
+
+.downlinks a {
+    background-color: transparent;
+    padding: 10px;
+    color: white !important;
+    font-size: 3em;
+    transition: 0.3s;
+}
+
+    .downlinks a:hover {
+        color: black !important;
+        background-color: white;
+    }
+
 .header {
     display: table;
-    height: 100%;
-    padding: 5%;
+    height: 100%; width: 100%;
+    padding: 10%;
+    background-color: white;
 }
 
 .header-content {
@@ -20,6 +94,7 @@ body {
     font-weight: 800;
     font-size: 3em;
     line-height: 1.5em;
+    color: black;
 }
 
 .header-content > div.subgreeting {
@@ -35,7 +110,75 @@ div.sliderstyle {
     font-weight: 300;
 }
 
+div.sliderstyle a {
+    color: rgb(100, 100, 100);
+    font-weight: 400;
+    transition: .3s;
+}
+
+    div.sliderstyle a:hover {
+        color: rgb(160, 160, 160);
+    }
+
 span.darkmode {
     background-color: rgb(44, 44, 44);
+    padding: 0px 3px 0px 3px;
     color: white;
+}
+
+span.ravenclaw {
+    font-weight: 800;
+    background: linear-gradient(to right, rgb(23, 13, 167), rgb(64, 134, 226));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.bottom {
+    height: 100%; width: 100%;
+    display: flex;
+    background-color: black;
+    position: relative;
+    color: white;
+}
+
+    .bottom a {
+        color: white;
+        transition: 0.3s;
+    }
+
+div.left {
+    width: 50%; height: 100%;
+}
+
+div.right {
+    width: 50%; height: 100%;
+    background-color: rgb(20, 20, 20);
+}
+
+@media only screen and (max-width: 600px) {
+    .header-content > div.greeting {
+        font-size: 2.5em;
+    }
+    .header-content > div.subgreeting {
+        font-size: 1em !important;
+    }
+    .bottom { 
+        display: block;
+        height: inherit; width: inherit;
+    }
+    
+    .midlinks {
+        display: block;
+        position: absolute;
+        margin: 0;
+        bottom: 3px; right: 0;
+    }
+    
+    div.left {
+        position: relative;
+        width: 100%; height: 100%;
+    }
+    div.right {
+        width: 100%; height: 100%;
+    }
 }
