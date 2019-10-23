@@ -1,1 +1,2 @@
-[jmgfx.github.io](https://jmgfx.github.io/)
+# jmgfx.github.io
+Repository for my personal website. Eternally under construction.
