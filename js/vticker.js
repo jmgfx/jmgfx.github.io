@@ -10,6 +10,7 @@ d(this).removeClass("paused");return b.trigger("vticker.resume")},next:function(
 a=a.element;a.unbind();return a.remove()}};return d.fn.vTicker=function(a){return f[a]?f[a].apply(this,Array.prototype.slice.call(arguments,1)):"object"!==typeof a&&a?d.error("Method "+a+" does not exist on jQuery.vTicker"):f.init.apply(this,arguments)}})(jQuery);
 {
     let vticker = $('#slider');
+    // let widthAssist = $('#plain-text');
     vticker.vTicker('init', {
         pause: 2000,
     });
@@ -17,7 +18,7 @@ a=a.element;a.unbind();return a.remove()}};return d.fn.vTicker=function(a){retur
     vticker.css({
       'display': 'inline-block',
       'vertical-align': 'bottom',
-      'width': width
+      'width': width,
     });
   }
 

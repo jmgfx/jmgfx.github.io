@@ -89,18 +89,26 @@ div.abcenter {
 .header-content {
     display: table-cell;
     vertical-align: middle;
+    width: 100%;
 }
 
-.header-content > div.greeting {
+.header-content .greeting-wrapper {
+    display: block;
+    width: 100%;
+}
+
+.header-content div.greeting {
     font-weight: 800;
     font-size: 3em;
     line-height: 1.5em;
     color: black;
+    display: inline-block;
 }
 
-.header-content > div.subgreeting {
-    font-size: 1.3em;
+.header-content div.subgreeting {
+    font-size: 1.3em !important;
     color: rgb(160, 160, 160);
+    display: inline-block;
 }
 
 span.name {

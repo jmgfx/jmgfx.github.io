@@ -1,5 +1,7 @@
 div.sliderstyle {
+    /* display: inline-block; */
     font-weight: 300;
+    overflow: hidden;
 }
 
 div.sliderstyle a {
@@ -21,6 +23,7 @@ span.darkmode {
 span.ravenclaw {
     font-weight: 800;
     background: linear-gradient(to right, rgb(23, 13, 167), rgb(64, 134, 226));
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
