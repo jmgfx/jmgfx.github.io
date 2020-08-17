@@ -18,7 +18,7 @@ a=a.element;a.unbind();return a.remove()}};return d.fn.vTicker=function(a){retur
     vticker.css({
       'display': 'inline-block',
       'vertical-align': 'bottom',
-      'width': width,
+      'width': width+(width*0.2),
     });
   }
 
