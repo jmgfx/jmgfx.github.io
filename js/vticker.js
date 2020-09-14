@@ -12,7 +12,7 @@ a=a.element;a.unbind();return a.remove()}};return d.fn.vTicker=function(a){retur
     let vticker = $('#slider');
     // let widthAssist = $('#plain-text');
     vticker.vTicker('init', {
-        pause: 2000,
+        pause: 1700,
     });
     let width = vticker.find('ul').width();
     vticker.css({
