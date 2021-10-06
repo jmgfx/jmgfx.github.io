@@ -1,4 +1,8 @@
 @media only screen and (max-width: 600px) {
+    .header-content {
+        padding: 2em;
+    }
+
     .header-content > div.greeting {
         font-size: 2.5em;
     }

@@ -93,8 +93,7 @@ div.abcenter {
     display: table-cell;
     vertical-align: middle;
     width: 100%;
-    /* padding: 10%; */
-    padding: 2em;
+    padding: 2em 20em;
     overflow:hidden;
 }
 
